@@ -1,6 +1,6 @@
-<!-- <body *ngIf=openTerminal>
-    <app-console></app-console>
-</body> -->
 <div class="logsize">
-    <app-console></app-console>
+    <!-- <app-console></app-console> -->
+    <div *ngIf="openTerminal" autofocus>
+        <app-terminal></app-terminal>
+    </div>
 </div>
