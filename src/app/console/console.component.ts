@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as Typed from 'typed.js';
 
 @Component({
@@ -6,7 +6,7 @@ import * as Typed from 'typed.js';
   templateUrl: './console.component.html',
   styleUrls: ['./console.component.css']
 })
-export class ConsoleComponent implements OnInit, OnDestroy {
+export class ConsoleComponent implements OnInit {
     typedIt: any;
     text: string;
     test: any;
@@ -37,18 +37,7 @@ export class ConsoleComponent implements OnInit, OnDestroy {
     this.typedIt = new Typed('#console_log', {
         strings: [this.text],
         typeSpeed: 1,
-        startDelay: 300,
-        showCursor: true,
-        cursorChar: '|'
+        startDelay: 300
     });
   }
-
-  // onKeyDown(event) {
-  //   if (event.key === 'Enter') {
-  //     // return true;
-  //   }
-  //   return false;
-  // }
-
-  ngOnDestroy() {}
 }
