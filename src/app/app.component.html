@@ -1,4 +1,6 @@
-<div style="text-align:center">
-    <app-terminal></app-terminal>
+<div class="logsize">
+    <app-console></app-console> -->
+    <div *ngIf="openTerminal" autofocus>
+        <app-terminal></app-terminal>
+    </div>
 </div>
-
