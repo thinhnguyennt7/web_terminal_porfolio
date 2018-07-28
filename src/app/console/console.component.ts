@@ -16,20 +16,19 @@ export class ConsoleComponent implements OnInit {
 
   constructor() {
 
-    this.text = '<span ' + this.green + '>thinhnguyen@ubuntu</span>:<span ' + this.red + '>/</span><span ' + this.blue + '>~</span> chmod u+x execute<br/><br/>' + 
+    this.text = '<span ' + this.green + '>thinhnguyen@ubuntu</span>:<span ' + this.red + '>/</span><span ' + this.blue + '>~</span> chmod u+x execute<br/><br/>' +
     '<span ' + this.green + '>thinhnguyen@ubuntu</span>:<span ' + this.red + '>/</span><span ' + this.blue + '>~</span> ./execute<br/><br/>' +
     '<p style="font-size: 2em">Thinh N Nguyen</p><br/>' +
-    'Hi! I am software engineer with background in web development and mobile application. I am currently junior student at Georgia Insitute of Technology, majoring in Computer Science and specializing in threads devices and info internetworks.</a><br/><br/>' +
-    'I am really passionate about computer science and technology and want to contribute myself to this great technology age!</a><br/><br/>' + 
-    'For developers, please press ' + '<span ' + this.green + '>~</span>' + ' on this page to use the terminal to navigate this website.<br/><br/>' +
-    '<span ' + this.green + '>thinhnguyen@ubuntu</span>:<span ' + this.red + '>/</span><span ' + this.blue + '>~</span> ^*_*^___^*_*^<br/><br/>';
-    
-    this.test = '<strong><ins>Hobbies</ins></strong>: I enjoy programming, math, soccer, travelling, and to explore a new thing around the world<br/><br/>'
-    '<strong><ins>Technical Languagues</ins></strong>: Java; Swift; Python; Javascript; Typescipt, Shell<br/><br/>' +
-    '<strong><ins>Technologies</ins></strong>: Git, Node.js, OracleDB, Flask, Angular <br/><br/>' +
-    'Find my resume here <a href="/data/thinhnguyen.pdf">Resume</a><br/><br/>' +
-    'Contact me at <a href="mailto:tnntech@gatech.edu">tnntech@gatech.edu</a>!<br/>' +
-    '<span id="a">thinhnguyen@ubuntu</span>:<span id="b">/</span><span id="c">~</span>';
+    'Hello world! I am currently junior student at Georgia Insitute of Technology, majoring in Computer Science and specializing in threads devices and info internetworks.</a><br/><br/>' +
+    'I am really passionate about computer science, technologies and want to contribute myself into this great technology century.</a><br/><br/>' +
+    '<strong>' + '<span ' + this.green + '>Technical Languagues</span></strong>: Python, JavaScript, Java, HTML, CSS, Swift, Typescipt, Shell, SQL, NoSQL<br/><br/>' +
+    '<strong>' + '<span ' + this.green + '>Technologies</span></strong>: Git, Node.js, Angular, Flask, React, MongoDB, OracleDB, Firebase, Heroku, Dialogflow <br/><br/>' +
+    '<strong> ' + '<span ' + this.green + '>Concepts</span></strong>: Algorithmns, Data Strucuturs, Problems Solving, Web Development, Mobile Development<br/><br/>' +
+    'Want my resume:<a href="https://drive.google.com/file/d/1eODdpqG301DSWc_SK1HwAp6Ar-qFTt3n/view"> Resume</a><br/><br/>' +
+    'Contact me at:<a href="mailto:tnntech@gatech.edu"> tnntech@gatech.edu</a><br/><br/>' +
+    '<span id="a" '+ this.green + '>thinhnguyen@ubuntu</span>:<span id="b" ' + this.red + '>/</span><span id="c" ' + this.blue + '>~</span>' +
+    ' For developers, please press ' + '<span ' + this.green + '>~</span>' + ' on this page to use the terminal to navigate this website.<br/><br/>' +
+    '<span ' + this.green + '>thinhnguyen@ubuntu</span>:<span ' + this.red + '>/</span><span ' + this.blue + '>~</span><br/><br/>';
   }
 
   ngOnInit() {
