@@ -24,7 +24,6 @@ export class TerminalComponent implements OnInit, OnDestroy {
 
 	constructor(private terminalService: TerminalService) {
 		this.terminalService.commandHandler.subscribe(command => {
-				
 				console.log("Current using command: ", command);
 				if (command.includes('cd ')) {
 					let path = command.substring(3, command.length).toUpperCase();
@@ -41,7 +40,6 @@ export class TerminalComponent implements OnInit, OnDestroy {
 						}
 					}
 				}
-				
 				switch (command) {
 					case 'date': {
 						this.response = new Date().toDateString();
@@ -55,9 +53,9 @@ export class TerminalComponent implements OnInit, OnDestroy {
 						}
 						break;
 					}
-					case 'cd ..': {
-						
-					}
+					// case 'cd ..': {
+					// 	// TODO
+					// }
 					case 'cd': {
 						this.response = "";
 						break;
@@ -71,11 +69,10 @@ export class TerminalComponent implements OnInit, OnDestroy {
 						break;
 					}
 					default: {
-						this.response = 'Command not found: ' + command;
+						this.response = 'This ' + command + ' command is currenly working on. Please check back for later update. Thank you!';
 						break;
 					}
 				}
-
 				// Send respone to console
 				this.terminalService.sendResponse(this.response);
 		});
