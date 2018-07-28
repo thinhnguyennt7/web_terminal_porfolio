@@ -1,4 +1,3 @@
-// import { SharedModule } from './shared/service/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,8 +19,7 @@ import { TerminalModule } from 'primeng/terminal';
   imports: [
     BrowserModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
-    TerminalModule,
-    // SharedModule
+    TerminalModule
     // TerminalService
   ],
   providers: [],
