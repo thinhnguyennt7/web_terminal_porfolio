@@ -14,11 +14,11 @@ export class TerminalComponent implements OnInit, OnDestroy {
 	ifFail: boolean;
 	response: any;
 	Resume: string;
-	AboutMe: string[] = ['Thinh_Nguyen-Resume.pdf', 'contact.txt', 'resume.txt', 'summary.txt'];
+	AboutMe: string = 'I am currently pursing my undergraduate at Georgia Tech, I am third years of computer science and my concentration and threads are Information networking and media. I will be graduating on May 2020 which is next summer.';
 	Projects: string[];
 	Welcome: string;
 	Experience: string;
-	folder: any[] = ['AboutMe', 'Projects', 'Welcome.txt'];
+	folder: any[] = ['AboutMe.txt', 'Projects.txt', 'Experiences.txt', 'Resume.txt'];
 	mainPath: string = 'thinhnguyen@ubuntu:/~ ';
 	currentDir: string = 'thinhnguyen@ubuntu/';
 
@@ -41,10 +41,6 @@ export class TerminalComponent implements OnInit, OnDestroy {
 					}
 				}
 				switch (command) {
-					case 'date': {
-						this.response = new Date().toDateString();
-						break;
-					}
 					case 'ls': {
 						this.response = this.folder[0] + '\n';
 						for (var ele = 1; ele < this.folder.length; ele++) {
@@ -53,28 +49,12 @@ export class TerminalComponent implements OnInit, OnDestroy {
 						}
 						break;
 					}
-					case 'cd ..': {
-						this.mainPath = 'thinhnguyen@ubuntu:/~ ';
-						break;
-					}
-					case 'cd': {
-						this.response = "";
-						break;
-					}
-					case 'cd ~': {
-						this.mainPath = 'thinhnguyen@ubuntu:/~ ';
-						break;
-					}
-					case 'pwd': {
-						this.response = this.currentDir;
-						break;
-					}
 					case 'cat Welcome.txt' || 'cat welcome.txt': {
 						this.response = 'Hello world! I am third year student and studying computer science at Georgia Insitute of Technology. I am specializing in threads media and info internetworks.' + ' I am really passionate about computer science, technologies and want to contribute myself into this great technology century.';
 						break;
 					}
-					case '': {
-						this.response = '';
+					case 'cat AboutMe.txt' || 'cat aboutme.txt': {
+						this.response = this.AboutMe;
 						break;
 					}
 					default: {
@@ -84,6 +64,7 @@ export class TerminalComponent implements OnInit, OnDestroy {
 				}
 				// Send respone to console
 				this.terminalService.sendResponse(this.response);
+				// }
 		});
 	}
 
