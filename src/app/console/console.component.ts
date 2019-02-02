@@ -24,8 +24,8 @@ export class ConsoleComponent implements OnInit {
     '<strong>' + '<span ' + this.green + '>Technical Languagues</span></strong>: Python, JavaScript, Java, HTML, CSS, Swift, Typescipt, Shell, SQL, NoSQL<br/><br/>' +
     '<strong>' + '<span ' + this.green + '>Technologies</span></strong>: Git, Node.js, Angular, EmberJS, Express.js, Flask, MongoDB, OracleDB, Firebase, Heroku, Dialogflow, Jenkins, Docker <br/><br/>' +
     '<strong> ' + '<span ' + this.green + '>Concepts</span></strong>: Algorithmns, Data Strucuturs, Problems Solving, Web Development, Mobile Development<br/><br/>' +
-    'Want my resume:<a href="https://drive.google.com/file/d/1eODdpqG301DSWc_SK1HwAp6Ar-qFTt3n/view"> Resume</a><br/><br/>' +
-    'Contact me at:<a href="mailto:tnntech@gatech.edu"> tnntech@gatech.edu</a><br/><br/>' +
+    'Want my resume:<a href="https://drive.google.com/open?id=1YSuEg21i5_p5hfiMVQJ3zzyrqf7mBubv" target="_blank">Resume</a><br/><br/>' +
+    'Contact me at:<a href="mailto:thinhnguyennt9@gmail.com">thinhnguyennt9@gmail.com</a><br/><br/>' +
     '<span id="a" '+ this.green + '>thinhnguyen@ubuntu</span>:<span id="b" ' + this.red + '>/</span><span id="c" ' + this.blue + '>~</span>' +
     ' For developers, please press ' + '<span ' + this.green + '>~</span>' + ' on this page to use the terminal to navigate this website.<br/><br/>' +
     '<span ' + this.green + '>thinhnguyen@ubuntu</span>:<span ' + this.red + '>/</span><span ' + this.blue + '>~</span><br/><br/>';
