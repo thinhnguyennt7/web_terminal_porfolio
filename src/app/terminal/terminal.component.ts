@@ -53,9 +53,10 @@ export class TerminalComponent implements OnInit, OnDestroy {
 						}
 						break;
 					}
-					// case 'cd ..': {
-					// 	// TODO
-					// }
+					case 'cd ..': {
+						this.mainPath = 'thinhnguyen@ubuntu:/~ ';
+						break;
+					}
 					case 'cd': {
 						this.response = "";
 						break;
@@ -66,6 +67,14 @@ export class TerminalComponent implements OnInit, OnDestroy {
 					}
 					case 'pwd': {
 						this.response = this.currentDir;
+						break;
+					}
+					case 'cat Welcome.txt' || 'cat welcome.txt': {
+						this.response = 'Hello world! I am third year student and studying computer science at Georgia Insitute of Technology. I am specializing in threads media and info internetworks.' + ' I am really passionate about computer science, technologies and want to contribute myself into this great technology century.';
+						break;
+					}
+					case '': {
+						this.response = '';
 						break;
 					}
 					default: {
