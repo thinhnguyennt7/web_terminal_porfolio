@@ -25,6 +25,7 @@ export class ConsoleComponent implements OnInit {
     '<strong>' + '<span ' + this.green + '>Technologies</span></strong>: Git, Node.js, Angular, EmberJS, Express.js, Flask, MongoDB, OracleDB, Firebase, Heroku, Dialogflow, Jenkins, Docker <br/><br/>' +
     '<strong> ' + '<span ' + this.green + '>Concepts</span></strong>: Algorithmns, Data Strucuturs, Problems Solving, Web Development, Mobile Development<br/><br/>' +
     'Want my resume:<a href="https://drive.google.com/open?id=1YSuEg21i5_p5hfiMVQJ3zzyrqf7mBubv" target="_blank">Resume</a><br/><br/>' +
+    'Github: <a href="https://github.com/thinhnguyennt7" target="_blank">Visit here!!!</a><br/><br/>' +
     'Contact me at:<a href="mailto:thinhnguyennt9@gmail.com">thinhnguyennt9@gmail.com</a><br/><br/>' +
     '<span id="a" '+ this.green + '>thinhnguyen@ubuntu</span>:<span id="b" ' + this.red + '>/</span><span id="c" ' + this.blue + '>~</span>' +
     ' For developers, please press ' + '<span ' + this.green + '>~</span>' + ' on this page to use the terminal to navigate this website.<br/><br/>' +
