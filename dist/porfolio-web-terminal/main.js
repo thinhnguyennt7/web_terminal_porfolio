@@ -233,7 +233,7 @@ var ConsoleComponent = /** @class */ (function () {
             '<strong>' + '<span ' + this.green + '>Unit Test</span></strong>: Junit, Supertest, Karma, Protractor<br/><br/>' +
             // '<strong>' + '<span ' + this.green + '>Technologies</span></strong>: Git, Node/Express, Angular, Redux, React, React-Native, Express.js, Flask, MongoDB, OracleDB, Firebase, Heroku, Dialogflow, Jenkins, Docker, GCP, Apigee, Redis <br/><br/>' +
             '<strong> ' + '<span ' + this.green + '>Concepts</span></strong>: Algorithmns, Data Strucuturs, Problems Solving, Web Development, Mobile Development<br/><br/>' +
-            'Want my resume: <a href="https://drive.google.com/file/d/1nmqXP0sqeADAM1WH-GLBN853EjW62SKK/view" target="_blank">Resume</a><br/><br/>' +
+            'Want my resume: <a href="https://drive.google.com/open?id=1hoVFoSXYYPfT_wksdntdqPPfQTYTdUQc" target="_blank">Resume</a><br/><br/>' +
             'Github: <a href="https://github.com/thinhnguyennt7" target="_blank">Profile</a><br/><br/>' +
             'Linkedin: <a href="https://www.linkedin.com/in/thinhnguyennt9/" target="_blank">Profile</a><br/><br/>' +
             'Contact me at: <a href="mailto:thinhnguyennt9@gmail.com">thinhnguyennt9@gmail.com</a><br/><br/>' +
@@ -466,7 +466,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/thinhnguyen/Desktop/web_terminal_porfolio/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/thinhnguyen/Desktop/Hobbies/Projects/web_terminal_porfolio/src/main.ts */"./src/main.ts");
 
 
 /***/ })
