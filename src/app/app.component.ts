@@ -15,17 +15,15 @@ export class AppComponent {
     openTerminal: boolean = false;
 
     constructor() {}
-  
-    @HostListener('window:keypress', ['$event'])
+    // @HostListener('window:keypress', ['$event'])
 
-    keyEvent(event: KeyboardEvent) {
-      
-      if (event.keyCode === KEY_CODE.BACK_QUOTE) {
-        if (this.openTerminal) {
-          this.openTerminal = false;
-        } else {
-          this.openTerminal = true;
-        }
-      }
-    }
+    // keyEvent(event: KeyboardEvent) {
+    //   if (event.keyCode === KEY_CODE.BACK_QUOTE) {
+    //     if (this.openTerminal) {
+    //       this.openTerminal = false;
+    //     } else {
+    //       this.openTerminal = true;
+    //     }
+    //   }
+    // }
 }
