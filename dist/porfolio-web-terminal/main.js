@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n.logsize {\n    /* width: 800px; */\n    margin-left: auto;\n    margin-right: auto;\n    margin-top: 100px;\n    font-size: 17px;\n}"
+module.exports = "\n.logsize {\n    margin-left: auto;\n    margin-right: auto;\n    margin-top: 60px;\n    font-size: 17px;\n}"
 
 /***/ }),
 
@@ -76,22 +76,6 @@ var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.openTerminal = false;
     }
-    AppComponent.prototype.keyEvent = function (event) {
-        if (event.keyCode === KEY_CODE.BACK_QUOTE) {
-            if (this.openTerminal) {
-                this.openTerminal = false;
-            }
-            else {
-                this.openTerminal = true;
-            }
-        }
-    };
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('window:keypress', ['$event']),
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", [KeyboardEvent]),
-        __metadata("design:returntype", void 0)
-    ], AppComponent.prototype, "keyEvent", null);
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
@@ -218,28 +202,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var ConsoleComponent = /** @class */ (function () {
     function ConsoleComponent() {
         this.green = 'style="color: #0f0;"';
-        this.red = 'style="color: #ff0096;"';
+        this.red = 'style="color: #FF0000;"';
         this.blue = 'style="color: #0bc;"';
-        this.text = '<span ' + this.green + '>thinhnguyen@ubuntu</span>:<span ' + this.red + '>/</span><span ' + this.blue + '>~</span> chmod u+x execute<br/><br/>' +
-            '<span ' + this.green + '>thinhnguyen@ubuntu</span>:<span ' + this.red + '>/</span><span ' + this.blue + '>~</span> ./execute<br/><br/>' +
-            '<p style="font-size: 2em">Thinh N Nguyen</p><br/>' +
-            'Hello world! I am rising fourth year student and studying computer science at Georgia Insitute of Technology. I am specializing in threads media and info internetworks.</a><br/><br/>' +
-            'I am really passionate about computer science, technologies and want to contribute myself into this great technology century.</a><br/><br/>' +
-            // '<strong>' + '<span ' + this.green + '>Technical Languagues</span></strong>: Python, JavaScript, Java, HTML, CSS/SCSS, Swift, Typescipt, C#, Shell, SQL, NoSQL<br/><br/>' +
-            '<strong>' + '<span ' + this.green + '>Back-end</span></strong>: Python, Node/Express, Java, Typescripts, REST API, Swift, C#<br/><br/>' +
-            '<strong>' + '<span ' + this.green + '>Front-end</span></strong>: Angular4-7, Redux, React, React-Native, HTML/HTML5, CSS/SCSS, Flask, D3.js<br/><br/>' +
-            '<strong>' + '<span ' + this.green + '>Devops</span></strong>: Heroku, Github/Gitlab/BitBucket, Docker, Jenkins, Redis, Shell, Apigee, GCP<br/><br/>' +
-            '<strong>' + '<span ' + this.green + '>Database</span></strong>: MySQL, MongoDB, PostgreSQL, Firebase<br/><br/>' +
-            '<strong>' + '<span ' + this.green + '>Unit Test</span></strong>: Junit, Supertest, Karma, Protractor<br/><br/>' +
-            // '<strong>' + '<span ' + this.green + '>Technologies</span></strong>: Git, Node/Express, Angular, Redux, React, React-Native, Express.js, Flask, MongoDB, OracleDB, Firebase, Heroku, Dialogflow, Jenkins, Docker, GCP, Apigee, Redis <br/><br/>' +
-            '<strong> ' + '<span ' + this.green + '>Concepts</span></strong>: Algorithmns, Data Strucuturs, Problems Solving, Web Development, Mobile Development<br/><br/>' +
-            'Want my resume: <a href="https://drive.google.com/open?id=1hoVFoSXYYPfT_wksdntdqPPfQTYTdUQc" target="_blank">Resume</a><br/><br/>' +
-            'Github: <a href="https://github.com/thinhnguyennt7" target="_blank">Profile</a><br/><br/>' +
-            'Linkedin: <a href="https://www.linkedin.com/in/thinhnguyennt9/" target="_blank">Profile</a><br/><br/>' +
-            'Contact me at: <a href="mailto:thinhnguyennt9@gmail.com">thinhnguyennt9@gmail.com</a><br/><br/>' +
-            '<span id="a" ' + this.green + '>thinhnguyen@ubuntu</span>:<span id="b" ' + this.red + '>/</span><span id="c" ' + this.blue + '>~</span>' +
-            ' For developers, please press ' + '<span ' + this.green + '>~</span>' + ' on this page to use the terminal to navigate this website.<br/><br/>' +
-            '<span ' + this.green + '>thinhnguyen@ubuntu</span>:<span ' + this.red + '>/</span><span ' + this.blue + '>~</span><br/><br/>';
+        this.schoolNameStyle = 'style="color: #FFEA00; text-transform: uppercase;"';
+        this.nameStyle = 'style="font-size: 2em; text-transform: uppercase;"';
+        this.text = "\n      <span " + this.green + ">thinhnguyen@ubuntu:</span><span " + this.blue + ">~</span><span " + this.red + "> chmod u+x execute</span><br/><br/>\n      <span " + this.green + ">thinhnguyen@ubuntu:</span><span " + this.blue + ">~</span><span " + this.red + "> ./execute</span><br/><br/>\n      <p " + this.nameStyle + ">Thinh N Nguyen</p>\n      Hello world! I am graduating this semester with Bachelor of Science in Computer Science from<span " + this.schoolNameStyle + "> Georgia Institute of Technology</span>. I am specializing in threads media and info inter-networks.</a><br/><br/>\n      I am really passionate about computer science, technologies and want to contribute myself into this great technology century.</a><br/><br/>\n      <strong><span " + this.green + ">Back-end</span></strong>: Python, Node/Express, Java, Typescripts, Swift, C#, Bash/Shell<br/><br/>\n      <strong><span " + this.green + ">Front-end</span></strong>: Angular4-8, Redux/React, React-Native, HTML5, CSS/SCSS, Flask, D3.js, Charts.js<br/><br/>\n      <strong><span " + this.green + ">Devops</span></strong>: Heroku, Github/Gitlab/BitBucket, Docker, Jenkins, Redis, Apigee, AWS, GCP, Kubernetes/K3s, Istio<br/><br/>\n      <strong><span " + this.green + ">Database</span></strong>: MySQL, MongoDB, PostgreSQL, Firebase, AuroraDB, DynamoDB, Sequelize<br/><br/>\n      <strong><span " + this.green + ">Unit Test</span></strong>: Junit, Supertest, Karma, Protractor<br/><br/>\n      <strong><span " + this.green + ">Concepts</span></strong>: Algorithms, Data Structures, Problems Solving, Web Development, Mobile Development, Chatbot<br/><br/>\n      Want my resume: <a " + this.blue + " href=\"https://drive.google.com/open?id=1_YAfSfdQ9NHRpxSGqTuJN4tspmvH-oSE\" target=\"_blank\">Resume</a><br/><br/>\n      Github: <a " + this.blue + " href=\"https://github.com/thinhnguyennt7\" target=\"_blank\">Profile</a><br/><br/>\n      Linkedin: <a " + this.blue + " href=\"https://www.linkedin.com/in/thinhnguyennt9/\" target=\"_blank\">Profile</a><br/><br/>\n      Contact me at: <a " + this.blue + " href=\"mailto:thinhnguyennt9@gmail.com\">thinhnguyennt9@gmail.com</a><br/><br/>\n      <span " + this.green + ">thinhnguyen@ubuntu:</span><span " + this.blue + ">~</span><span " + this.red + ">  THE END!</span>\n    ";
     }
     ConsoleComponent.prototype.ngOnInit = function () {
         this.typedIt = new typed_js__WEBPACK_IMPORTED_MODULE_1__('#console_log', {
@@ -315,33 +282,13 @@ var TerminalComponent = /** @class */ (function () {
         this.terminalService = terminalService;
         this.Resume = '';
         this.AboutMe = 'Hello world! I am currently pursing my undergraduate at Georgia Tech, I am third years of computer science and my concentration and threads are Information networking and media. I am really passionate about computer science, technologies and want to contribute myself into this great technology century. I will be graduating on May 2020 which is next summer.';
-        // project1: string = '+----------------+' + '\n'+ 'APPOINTMENTS GO\n+----------------+\n + Integrated an iOS app under model­view­controller pattern, that supports clients to make any reservations with their favorite stores within an app. Maintained the calendar on top of Google calendar to allow real­time schedule data to share between admin and client.';
-        // project2: string = '';
-        // project3: string = '';
-        // project4: string = '';
-        // Projects: string = '' + this.project1 + '\n+----------------+' + this.project2 + this.project3 + this.project4;
         this.Experience = 'On summer 2018, I had a chance to intern at Macy’s System and Technology where I worked under infrastructure team. At Macy’s our infrastructure team split into 2 smaller team one is for Devops and I worked for the other one which is web team. I worked on both backend and frontend during my internship. I was helping my team to built an internal tool that allow other teams inside Macy’s could submit servers request to build whenever needed by using IBM soft layer Cloud. One of the task that I has done was to write python scripts that query out all the servers that has been built from out database to analyze and determine which servers was successfully built and still valid to use and which one not. \n' + ' Furthermore, I am currently working on a research project at Georgia Tech. The project that I am working on is to analyze the data set from our GT server machine and return back a queue follow with the hostserver name that has the least jobs in the queue. There are many aspect factors in my algorithms because each servers has different max runtime and wall time and number of nodes allow therefore the one has the least jobs will be the one has the faster performance.';
         this.folder = ['AboutMe.txt', 'Projects.txt', 'Experiences.txt', 'Resume.txt'];
         this.helpCommand = 'cat _filename_: View the txt file. \n';
         this.mainPath = 'thinhnguyen@ubuntu:/~ ';
         this.currentDir = 'thinhnguyen@ubuntu/';
         this.terminalService.commandHandler.subscribe(function (command) {
-            console.log("Current using command: ", command);
-            // if (command.includes('cd ')) {
-            // 	let path = command.substring(3, command.length).toUpperCase();
-            // 	console.log("The File name: ", path);
-            // 	for (var element in this.folder) {
-            // 		console.log(this.folder[element]);
-            // 		if (path === this.folder[element].toUpperCase()) {
-            // 			this.mainPath = 'thinhnguyen@ubuntu:/~' + this.folder[element] + '/';
-            // 			console.log(this.mainPath);
-            // 			break;
-            // 		} else {
-            // 			 console.log(command + ": No such directory");
-            // 			 break;
-            // 		}
-            // 	}
-            // }
+            // console.log("Current using command: ", command);
             switch (command) {
                 case 'ls': {
                     _this.response = _this.folder[0] + '\n';
@@ -381,7 +328,6 @@ var TerminalComponent = /** @class */ (function () {
             }
             // Send respone to console
             _this.terminalService.sendResponse(_this.response);
-            // }
         });
     }
     TerminalComponent.prototype.ngOnDestroy = function () {
