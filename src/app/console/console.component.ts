@@ -30,8 +30,8 @@ export class ConsoleComponent implements OnInit {
   constructor() {
 
     this.executing = `
-      <span ${this.green}>thinhnguyen@ubuntu:</span><span ${this.blue}>~</span><span ${this.red}> chmod u+x execute</span><br/><br/>
-      <span ${this.green}>thinhnguyen@ubuntu:</span><span ${this.blue}>~</span><span ${this.red}> ./execute</span><br/><br/>^500
+      <span ${this.green}>thinh@ubuntu </span><span ${this.blue}>~</span><span ${this.red}> chmod execute</span><br/><br/>
+      <span ${this.green}>thinh@ubuntu </span><span ${this.blue}>~</span><span ${this.red}> ./execute</span><br/><br/>^500
       <div ${this.center}>
         <span>Processing </span>^1000
         <span style="color: red">. </span>^1000
@@ -54,7 +54,7 @@ export class ConsoleComponent implements OnInit {
       Github: <a ${this.blue} href="https://github.com/thinhnguyennt7" target="_blank">Profile</a><br/><br/>
       LinkedIn: <a ${this.blue} href="https://www.linkedin.com/in/thinhnguyennt9/" target="_blank">Profile</a><br/><br/>
       Email: <a ${this.blue} href="mailto:thinhnguyennt9@gmail.com">thinhnguyennt9@gmail.com</a><br/><br/>
-      <span ${this.green}>thinhnguyen@ubuntu:</span><span ${this.blue}>~</span><span ${this.red}>  THE END!</span>
+      <span ${this.green}>thinh@ubuntu </span><span ${this.blue}>~</span><span ${this.red}>  THE END!</span>
     `;
   }
 
