@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n.logsize {\n    margin-left: auto;\n    margin-right: auto;\n    margin-top: 60px;\n    font-size: 17px;\n}"
+module.exports = ".logsize {\n    margin: 0 auto;\n    margin-top: 60px;\n    font-size: 17px;\n}"
 
 /***/ }),
 
@@ -124,8 +124,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-// import { TerminalService } from '@node_modules/primeng/components/terminal/terminalservice';
-// import { TerminalService } from 'primeng/components/terminal/terminalservice';
+// import { NgImageAsParticlesModule } from 'ng-image-as-particles';
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -139,8 +138,7 @@ var AppModule = /** @class */ (function () {
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_service_worker__WEBPACK_IMPORTED_MODULE_3__["ServiceWorkerModule"].register('/ngsw-worker.js', { enabled: _environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production }),
-                primeng_terminal__WEBPACK_IMPORTED_MODULE_7__["TerminalModule"]
-                // TerminalService
+                primeng_terminal__WEBPACK_IMPORTED_MODULE_7__["TerminalModule"],
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
@@ -150,17 +148,6 @@ var AppModule = /** @class */ (function () {
 }());
 
 
-
-/***/ }),
-
-/***/ "./src/app/console/console.component.css":
-/*!***********************************************!*\
-  !*** ./src/app/console/console.component.css ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n#console_log {\n    font-family: courier, monospace;\n    font-size: 17px;\n    color: #fff;\n    width: 900px;\n}\n"
 
 /***/ }),
 
@@ -204,22 +191,35 @@ var ConsoleComponent = /** @class */ (function () {
         this.green = 'style="color: #0f0;"';
         this.red = 'style="color: #FF0000;"';
         this.blue = 'style="color: #0bc;"';
-        this.schoolNameStyle = 'style="color: #FFEA00; text-transform: uppercase;"';
-        this.nameStyle = 'style="font-size: 2em; text-transform: uppercase;"';
-        this.text = "\n      <span " + this.green + ">thinhnguyen@ubuntu:</span><span " + this.blue + ">~</span><span " + this.red + "> chmod u+x execute</span><br/><br/>\n      <span " + this.green + ">thinhnguyen@ubuntu:</span><span " + this.blue + ">~</span><span " + this.red + "> ./execute</span><br/><br/>\n      <p " + this.nameStyle + ">Thinh N Nguyen</p>\n      Hello world! I am graduating this semester with Bachelor of Science in Computer Science from<span " + this.schoolNameStyle + "> Georgia Institute of Technology</span>. I am specializing in threads media and info inter-networks.</a><br/><br/>\n      I am really passionate about computer science, technologies and want to contribute myself into this great technology century.</a><br/><br/>\n      <strong><span " + this.green + ">Back-end</span></strong>: Python, Node/Express, Java, Typescripts, Swift, C#, Bash/Shell<br/><br/>\n      <strong><span " + this.green + ">Front-end</span></strong>: Angular4-8, Redux/React, React-Native, HTML5, CSS/SCSS, Flask, D3.js, Charts.js<br/><br/>\n      <strong><span " + this.green + ">Devops</span></strong>: Heroku, Github/Gitlab/BitBucket, Docker, Jenkins, Redis, Apigee, AWS, GCP, Kubernetes/K3s, Istio<br/><br/>\n      <strong><span " + this.green + ">Database</span></strong>: MySQL, MongoDB, PostgreSQL, Firebase, AuroraDB, DynamoDB, Sequelize<br/><br/>\n      <strong><span " + this.green + ">Unit Test</span></strong>: Junit, Supertest, Karma, Protractor<br/><br/>\n      <strong><span " + this.green + ">Concepts</span></strong>: Algorithms, Data Structures, Problems Solving, Web Development, Mobile Development, Chatbot<br/><br/>\n      Want my resume: <a " + this.blue + " href=\"https://drive.google.com/open?id=1_YAfSfdQ9NHRpxSGqTuJN4tspmvH-oSE\" target=\"_blank\">Resume</a><br/><br/>\n      Github: <a " + this.blue + " href=\"https://github.com/thinhnguyennt7\" target=\"_blank\">Profile</a><br/><br/>\n      Linkedin: <a " + this.blue + " href=\"https://www.linkedin.com/in/thinhnguyennt9/\" target=\"_blank\">Profile</a><br/><br/>\n      Contact me at: <a " + this.blue + " href=\"mailto:thinhnguyennt9@gmail.com\">thinhnguyennt9@gmail.com</a><br/><br/>\n      <span " + this.green + ">thinhnguyen@ubuntu:</span><span " + this.blue + ">~</span><span " + this.red + ">  THE END!</span>\n    ";
+        this.schoolNameStyle = 'style="color: yellow; text-transform: uppercase;"';
+        this.nameStyle = "\n      style=\"font-size: 2em; text-transform: uppercase;\";\n    ";
+        this.workStyle = "\n      style=\"font-size: 18px;\";\n    ";
+        this.yellow = 'style="color: yellow;"';
+        this.center = 'style="text-align: center"';
+        this.executing = "\n      <span " + this.green + ">thinhnguyen@ubuntu:</span><span " + this.blue + ">~</span><span " + this.red + "> chmod u+x execute</span><br/><br/>\n      <span " + this.green + ">thinhnguyen@ubuntu:</span><span " + this.blue + ">~</span><span " + this.red + "> ./execute</span><br/><br/>^500\n      <div " + this.center + ">\n        <span>Processing </span>^1000\n        <span style=\"color: red\">. </span>^1000\n        <span style=\"color: green\">. </span>^1000\n        <span style=\"color: yellow\">. </span>^100\n        ^1500\n      </div>\n    ";
+        this.text = "\n      <p " + this.nameStyle + ">Thinh N Nguyen</p><strong><span " + this.workStyle + ">Software Engineer @ <strong " + this.yellow + ">Amazon</strong></span></strong></br></br><hr>\n      HELLO WORLD! I graduated from<span " + this.schoolNameStyle + "> Georgia Institute of Technology</span> with Bachelor of Science in Computer Science. I am really passionate about computer science, technologies and want to contribute myself into this great technology century.</a><br/><br/>\n      <strong><span " + this.green + ">Back-end</span></strong>: Python, Node/Express, Java, Typescripts, Swift, C#, Go, Bash/Shell<br/><br/>\n      <strong><span " + this.green + ">Front-end</span></strong>: Angular4-8, Redux/React, React-Native, HTML5, CSS/SCSS, Flask, D3.js, Charts.js<br/><br/>\n      <strong><span " + this.green + ">Devops</span></strong>: Heroku, Github/Gitlab/BitBucket, Docker, Jenkins, Redis, Apigee, AWS, GCP, Kubernetes/K3s, Istio<br/><br/>\n      <strong><span " + this.green + ">Database</span></strong>: MySQL, MongoDB, PostgreSQL, Firebase, AuroraDB, DynamoDB, Sequelize<br/><br/>\n      <strong><span " + this.green + ">Unit Test</span></strong>: Junit, Supertest, Karma, Protractor<br/><br/>\n      <strong><span " + this.green + ">Concepts</span></strong>: Algorithms, Data Structures, Systems, Problems Solving, Web/Mobile Development, Chatbot<br/><br/>\n      Resume: <a " + this.blue + " href=\"https://drive.google.com/open?id=1_YAfSfdQ9NHRpxSGqTuJN4tspmvH-oSE\" target=\"_blank\">View</a><br/><br/>\n      Github: <a " + this.blue + " href=\"https://github.com/thinhnguyennt7\" target=\"_blank\">Profile</a><br/><br/>\n      LinkedIn: <a " + this.blue + " href=\"https://www.linkedin.com/in/thinhnguyennt9/\" target=\"_blank\">Profile</a><br/><br/>\n      Email: <a " + this.blue + " href=\"mailto:thinhnguyennt9@gmail.com\">thinhnguyennt9@gmail.com</a><br/><br/>\n      <span " + this.green + ">thinhnguyen@ubuntu:</span><span " + this.blue + ">~</span><span " + this.red + ">  THE END!</span>\n    ";
     }
     ConsoleComponent.prototype.ngOnInit = function () {
         this.typedIt = new typed_js__WEBPACK_IMPORTED_MODULE_1__('#console_log', {
-            strings: [this.text],
-            typeSpeed: 1,
-            startDelay: 300
+            strings: [
+                this.executing,
+                this.text
+            ],
+            typeSpeed: 3,
+            backSpeed: 0,
+            startDelay: 350,
+            showCursor: true,
+            smartBackspace: true,
         });
     };
     ConsoleComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-console',
             template: __webpack_require__(/*! ./console.component.html */ "./src/app/console/console.component.html"),
-            styles: [__webpack_require__(/*! ./console.component.css */ "./src/app/console/console.component.css")]
+            // styleUrls: ['./console.component.css'],
+            styles: [
+                '#console_log { font-family: courier, monospace; font-size: 18px; color: #fff; width: 900px; }',
+            ],
         }),
         __metadata("design:paramtypes", [])
     ], ConsoleComponent);
@@ -276,6 +276,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+// import { TerminalInterface } from './terminal';
 var TerminalComponent = /** @class */ (function () {
     function TerminalComponent(terminalService) {
         var _this = this;

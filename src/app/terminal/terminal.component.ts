@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { TerminalService } from 'primeng/components/terminal/terminalservice';
 import { Subscription } from 'rxjs';
-import { TerminalInterface } from './terminal';
+// import { TerminalInterface } from './terminal';
 
 @Component({
 	selector: 'app-terminal',
